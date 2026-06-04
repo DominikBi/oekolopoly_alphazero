@@ -1,0 +1,39 @@
+        if self.render_mode == "debug":
+            state = f"""
+    ###############################################
+    round {self.V[self.ROUND]}
+
+    -----------------------------------------------
+    last action: {self.curr_action} (min: {self.Amin}, max: {self.Amax})
+
+    Sanitation: {self.curr_action[0]} (min: {self.Amin[0]}, max: {self.Amax[0]})
+    Production: {self.curr_action[1]} (min: {self.Amin[1]}, max: {self.Amax[1]})
+    Education: {self.curr_action[2]} (min: {self.Amin[2]}, max: {self.Amax[2]})
+    Quality of Life: {self.curr_action[3]} (min: {self.Amin[3]}, max: {self.Amax[3]})
+    Population Growth: {self.curr_action[4]} (min: {self.Amin[4]}, max: {self.Amax[4]})
+
+    Population Growth additional points: {self.curr_action[5]} (min: {self.Amin[5]}, max: {self.Amax[5]})
+    additional points can be spent on Population Growth if Education is above 20,
+    and the amount of additional points depends on the level of Education.
+    If Education is below 21, no additional points can be spent on Population Growth.
+
+    Number of additional points that can be spent on Population Growth based on current level of Education:
+    Education 21-23: up to 3 additional points
+    Education 24-27: up to 4 additional points
+    Education 28-29: up to 5 additional points
+
+    -----------------------------------------------
+
+    Sanitation:        {self.V[self.SANITATION]} (min: {self.Vmin[self.SANITATION]}, max: {self.Vmax[self.SANITATION]})
+    Production:        {self.V[self.PRODUCTION]} (min: {self.Vmin[self.PRODUCTION]}, max: {self.Vmax[self.PRODUCTION]})
+    Education:         {self.V[self.EDUCATION]} (min: {self.Vmin[self.EDUCATION]}, max: {self.Vmax[self.EDUCATION]})
+    Quality of Life:   {self.V[self.QUALITY_OF_LIFE]} (min: {self.Vmin[self.QUALITY_OF_LIFE]}, max: {self.Vmax[self.QUALITY_OF_LIFE]})
+    Population Growth: {self.V[self.POPULATION_GROWTH]} (min: {self.Vmin[self.POPULATION_GROWTH]}, max: {self.Vmax[self.POPULATION_GROWTH]})
+    Environment:       {self.V[self.ENVIRONMENT]} (min: {self.Vmin[self.ENVIRONMENT]}, max: {self.Vmax[self.ENVIRONMENT]})
+    Population:        {self.V[self.POPULATION]} (min: {self.Vmin[self.POPULATION]}, max: {self.Vmax[self.POPULATION]})
+    Politics:          {self.V[self.POLITICS]} (min: {self.Vmin[self.POLITICS]}, max: {self.Vmax[self.POLITICS]})
+
+    Action points:     {self.V[self.POINTS]}
+    round {self.V[self.ROUND]}
+    ###############################################
+    """
