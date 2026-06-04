@@ -1,0 +1,1 @@
+for i in {1..75}; do python nmcts_6x6.py; done

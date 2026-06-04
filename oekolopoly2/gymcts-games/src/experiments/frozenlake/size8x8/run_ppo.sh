@@ -1,0 +1,1 @@
+for i in {1..75}; do python masked_ppo_8x8.py; done

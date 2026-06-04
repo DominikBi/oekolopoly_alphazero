@@ -1,0 +1,1 @@
+for i in {1..15}; do python nmcts_oeko.py; done

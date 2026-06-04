@@ -1,0 +1,1 @@
+for i in {1..25}; do python mcts_6x6.py; done

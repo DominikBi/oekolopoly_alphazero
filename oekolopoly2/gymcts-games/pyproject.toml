@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gymcts-games"
+version = "0.0.1"
+description = "A collection of games and environments for the gymcts library."
+readme = "README.md"
+authors = [{ name = "Alexander Nasuta", email = "alexander.nasuta@wzl-iqs.rwth-aachen.de" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+dependencies = [
+    "rich",
+    "numpy",
+    "gymnasium",
+    "matplotlib<3.9",
+    "gymcts>=1.5.0",
+    "stable_baselines3",
+    "sb3-contrib",
+    "wandb",
+]
+requires-python = ">=3.11"
+
+
+[project.optional-dependencies]
+examples = [
+    "jsp-instance-utils",
+    "graph-matrix-jsp-env",
+    "graph-jsp-env",
+]
+
+[project.urls]
+Homepage = "https://github.com/Alexander-Nasuta/gymcts"
+
+

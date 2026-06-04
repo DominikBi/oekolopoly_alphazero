@@ -1,0 +1,1 @@
+for i in {1..16}; do python masked_ppo_6x6.py; done

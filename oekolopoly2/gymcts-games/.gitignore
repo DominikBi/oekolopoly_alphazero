@@ -1,0 +1,132 @@
+# Local secrets and environment files
+.pypitoken
+.pypirc
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE settings
+.idea/
+.run/
+.vscode/
+
+# Local scratch files
+main.py
+src/test.py
+src/testDom.py
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python packaging / build output
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pypackages__/
+
+# Test / coverage / type-checking caches
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.ruff_cache/
+
+# Logs and runtime state
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+celerybeat-schedule
+celerybeat.pid
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache/
+.scrapy/
+profile_default/
+ipython_config.py
+.ipynb_checkpoints/
+
+# Experiment tracking
+wandb/
+**/wandb/
+*.wandb/
+mlruns/
+runs/
+
+# RL / ML model artifacts and generated experiment output
+models/
+models_*/
+src/models/
+src/models_*/
+src/**/models/
+src/**/models_*/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.zip
+
+# Documentation / site builds
+docs/_build/
+/site/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Translations
+*.mo
+*.pot
+
+# Tool-specific project files
+.spyderproject
+.spyproject
+.ropeproject
+.python-version
+local_settings.py
+*.sage.py
+target/
